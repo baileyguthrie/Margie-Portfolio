@@ -20,3 +20,51 @@
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
+
+// Home screen styles
+.home {
+    height: 100vh;
+    background: url('/assets/succulent_backsplash.jpeg');
+    background-size: cover;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-screen {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin: 0 auto;
+    
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    h1 {
+        font-size: 106px;
+        font-size: 7.4vw;
+    }
+    h3 {
+        font-size: 18px;
+        //font-size: 1.5vw;
+    }
+}
+
+.btn {
+    color: white;
+    border-color: white;
+    margin-top: 20px;
+    &:hover {
+        background: white;
+        color: SlateGray;
+    }
+}
+
+// styles for navbar home button
+.navbar-default .navbar-nav > li > .btn-nav {
+    border: red;
+}
