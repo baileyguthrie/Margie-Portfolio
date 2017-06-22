@@ -1,3 +1,24 @@
 <%= render 'navbar' %>
 
-about me
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="col-sm-4">
+        <%= image_tag("about-me-profile.jpg", :alt => "My profile picture!", class: 'about-me-profile') %>
+      </div>
+      <div>
+        <h2>About Me</h2>
+        <p>Howdy!</p>
+        <p>My name is Margaret Ann Trame, and I am a junior at Texas A&M University 
+        studying Recreation, Park and Tourism Sciences with a focus in Tourism Management. 
+        I am currently pursuing a certification in Professional Event Management 
+        as well as a Hospitality certificate. Please click the links below to get 
+        an idea of the types of events I have contributed to and the work I have 
+        been involved in. </p>
+        <p>Thanks & Gig 'Em!</p>
+        <%= link_to "VIEW MY WORK", my_work_path, class: 'btn btn-lg' %>
+        <%= link_to "VIEW MY RESUME", asset_path("resume.pdf"), class: 'btn' %>
+      </div>
+    </div>
+  </div>
+</div>

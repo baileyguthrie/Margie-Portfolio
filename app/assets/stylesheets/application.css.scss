@@ -24,7 +24,7 @@ h1, h2, h3 {
 // Home screen styles
 .home {
     height: 100vh;
-    background: url('/assets/succulent_backsplash.jpeg');
+    background: url('/assets/succulent-flowers-plant-4k.jpeg');
     background-size: cover;
     position: relative;
     
@@ -46,25 +46,68 @@ h1, h2, h3 {
     
     h1 {
         font-size: 106px;
-        font-size: 7.4vw;
+        //font-size: 6.5vw;
+        font-size: 13vh;
+        line-height: 1em;
     }
     h3 {
         font-size: 18px;
-        //font-size: 1.5vw;
+        font-size: 2.19vh;
+        line-height: 1.4em;
     }
 }
 
-.btn {
+.home-screen .btn, .navbar .btn {
     color: white;
-    border-color: white;
+    border: 2px solid white;
     margin-top: 20px;
+    letter-spacing: .1em;
     &:hover {
         background: white;
         color: SlateGray;
     }
 }
 
-// styles for navbar home button
-.navbar-default .navbar-nav > li > .btn-nav {
-    border: red;
+// styles for navbar
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &:hover {
+        color: white;
+        opacity: 0.75;
+    }
+}
+
+.navbar-default .navbar-nav > li > .navbar-btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &:hover {
+        background: white;
+        color: black;
+        opacity: 1;
+    }
+}
+
+.navbar .container-fluid {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+// About me styles
+.about-me-profile {
+    width: 100%;
 }
