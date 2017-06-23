@@ -6,6 +6,16 @@ Rails.application.routes.draw do
   
   get 'my-work', to: 'pages#my_work'
   
+  get 'bbq-2017', to: 'events#bbq'
+  
+  get 'freedomfest', to: 'events#freedomfest'
+  
+  get 'judo-competition', to: 'events#judo'
+  
+  get 'kickball-2017', to: 'events#kickball'
+  
+  get 'mountain-view-retreat-center', to: 'events#mvrc'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -68,7 +68,7 @@ h1, h2, h3 {
     }
 }
 
-// styles for navbar
+// Navbar styles
 .navbar-toggle {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -145,7 +145,8 @@ p {
 }
 
 .btn-about {
-    padding: 13px 26px;
+    padding: 12px 24px;
+    border: 2px solid transparent;
     color: white;
     background: black;
     &:hover {
@@ -164,18 +165,67 @@ p {
     justify-content: center;
 }
 
-// .iimg-container {
-//     width: 80%;
-//     padding-bottom: 100%;
-//     overflow: hidden;
-//     position: relative;
-//     background: #000;
-// }
+// Footer styles
+.row-top {
+    background: #f0f0f0;
+    margin-top: 60px;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    line-height: 1.6em;
+    letter-spacing: .5px;
+}
 
-// .iimg-profile {
-//     position: absolute;
-//     width: auto;
-//     min-width: 100%;
-//     min-height: 100%;
-    
-// }
+.row-bot {
+    background: black;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer-link {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.25em;
+    padding: .75em 1em;
+    &:hover {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+    }
+}
+
+// My Work stlyes
+
+.date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: .02em;
+    line-height: 1.2em;
+}
+
+.work-thumb-container {
+    margin-top: 18px;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 1.3em;
+    letter-spacing: 4px;
+}
+
+.btn-work {
+    padding: 1em 2.5em;
+    border: 2px solid black;
+    color: black;
+    background: white;
+    &:hover {
+        background: black;
+        border: 2px solid black;
+        color: white;
+    }
+}
+
+.btn-work, .btn-about {
+    //letter-spacing: .1em;
+    line-height: 1.1em;
+}

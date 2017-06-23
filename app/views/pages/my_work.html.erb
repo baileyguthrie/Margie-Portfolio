@@ -6,4 +6,33 @@
       <h2 class="text-center page-header">My Work</h2>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h3>
+        <strong>Hands-on Event Experience</strong>
+      </h3>
+      <p>Below are three major events I played a critical role in during the Spring 2017 semeseter</p>
+    </div>
+  </div>
+  
+  <!-- Events -->
+  <div class="row">
+    <div class="col-md-2 col-md-offset-3 work-thumb-container">
+      <%= image_tag('my-work/kickball/kickball-logo.jpg', :alt => 'Kickball Logo', class: 'img-responsive') %>
+      <p class="date">February 25, 2017</p>
+      <%= link_to "SEE MORE", kickball_2017_path, class: 'btn btn-work' %>
+    </div>
+    
+    <div class="col-md-4">
+      <p class="title">KAPPA DELTA CHI 14th ANNUAL KICKBALL TOURNAMENT</p>
+      <p>This annual fundraising event is hosted by my sorority to raise funds for 
+      our philanthropy, The American Cancer Society. This year, we take great pride 
+      in raising an all-time record of $2,300 for the society. Through this event, 
+      I served as an assistant event coordinator, where I learned how to supervised 
+      other people, work with a team, and handle any risks that occurred.</p>
+    </div>
+  </div>
+  
+  <%= render 'footer' %>
+  
 </div>
