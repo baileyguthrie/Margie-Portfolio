@@ -16,7 +16,22 @@
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "ABOUT ME", about_me_path, class: 'navbar-text' %></li>
-        <li><%= link_to "MY WORK", my_work_path, class: 'navbar-text' %></li>
+        
+        <li class="work"><%= link_to "MY WORK", my_work_path, class: 'navbar-text' %></li>
+        <li class="my-dropdown desktop">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a class="kickball-btn">Kickball 2017</a></li>
+            <li><a class="judo-btn">Judo Competition</a></li>
+            <li><a class="bbq-btn">BBQ 2017</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a class="mvrc-btn">Mountain View Retreat Center</a></li>
+            <li><a class="freedomfest-btn">Freedomfest</a></li>
+          </ul>
+        </li>
+        
         <li><%= link_to "HOME", root_path, class: 'btn navbar-btn navbar-text' %></li>
       </ul>
     </div><!-- /.navbar-collapse -->

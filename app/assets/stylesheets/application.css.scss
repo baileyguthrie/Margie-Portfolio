@@ -84,8 +84,8 @@ h1, h2, h3 {
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
     color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 22px;
+    margin-bottom: 22px;
     &:hover {
         color: white;
         opacity: 0.75;
@@ -109,9 +109,26 @@ h1, h2, h3 {
     }
 }
 
-.navbar-right {
-    display: flex;
-    align-items: center;
+.navbar-default .navbar-nav .work > a {
+    padding-right: 0px;
+}
+
+.navbar-default .navbar-nav .my-dropdown > a{
+    margin-left: -15px;
+    background: none !important;
+}
+
+.navbar-default .navbar-nav .dropdown-menu {
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    > li> a {
+        color: white;
+        text-align: right;
+        &:hover, &:focus {
+            background: none;
+            color: rgba(255, 255, 255, 0.75);
+        }
+    }
 }
 
 // Spaces navbar elements nicely from edges, but creates bug on mobile with being
@@ -245,7 +262,7 @@ p {
     .mobile {
         display: block;
     }
-    .desktop {
+    .desktop, .navbar-default .navbar-nav .desktop {
         display: none;
     }
 }
