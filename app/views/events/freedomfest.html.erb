@@ -1,6 +1,50 @@
 <%= render 'navbar' %>
 
 <div class="container-fluid">
-    
-    <%= render 'footer' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center page-header">Freedomfest at Milican Reserve</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= image_tag('my-work/freedomfest/freedomfest-venue.jpg', :alt => 'Freedomfest Venue', class: 'img-responsive') %>
+      <p class="date">THE VENUE</p>
+      <p>Millican Reserve is a community currently operating on nearly 1,000 acres of 
+      varied terrain just south of College Station, Texas. The Millican Alliance is 
+      dedicated to building healthy community around nature by implementing activities 
+      for both adults and children involving wildlife conservation, local agriculture, 
+      recreation, and the arts. By bringing people into nature through these diverse and 
+      exciting offerings, The Alliance is creating a healthy new way of life in Central Texas.</p>
+    </div>
+  </div>
+  <br class="mobile"><br class="mobile">
+  <div class="row">
+    <div class="col-md-3 col-md-offset-3">
+      <%= image_tag('my-work/freedomfest/freedomfest-event-resize.jpg', :alt => 'Freedinfest Event', class: 'img-responsive', id: 'the-event') %>
+      <p class="date">THE EVENT</p>
+      <p>My team developed a 4th of July Festival to be hosted on this property. 
+      We carefully created an overall theme and color scheme for the event, designed 
+      a wide array of promotional materials, calculated budgets, outlined personnel 
+      requirements, researched risk management procedures, planned various timelines, etc.</p>
+    </div>
+    <br class="mobile"><br class="mobile">
+    <div class="col-md-3">
+      <%= image_tag('my-work/freedomfest/freedomfest-activities-sq.jpg', :alt => 'Freedomfest Activities', class: 'img-responsive', id: 'the-activity') %>
+      <p class="date">ACTIVITIES</p>
+      <p>The classic, Americana-themed event, will provide carefree, summertime fun 
+      through various games including: ring toss, balloon darts, food trucks, live 
+      music, sparklers, and much more! This event is to be enjoyed by the community 
+      as a whole, and we hope to see the implementation of this event in the near future!</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 about-buttons">
+      <%= link_to "GO BACK", my_work_path, class: 'btn btn-about' %>
+      <div class="button-spacer"></div>
+      <%= link_to "VIEW FULL PROGRAM PLAN", asset_path("freedomfest.pdf"), class: 'btn btn-about' %>
+    </div>
+  </div>
+  <%= render 'footer' %>
 </div>

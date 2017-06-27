@@ -1,6 +1,45 @@
 <%= render 'navbar' %>
 
 <div class="container-fluid">
-    
-    <%= render 'footer' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center page-header">Mountain View Retreat Center</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-3">
+      <%= image_tag('my-work/mvrc/mvrc-assignment-32.jpg', :alt => 'Mountain View Retreat Center Assignment', class: 'img-responsive') %>
+      <p class="date">THE ASSIGNMENT</p>
+      <p>I completed this project as an assignment from a course at Texas A&M University. 
+      This assignment required the development of an existing or original company 
+      with a full, comprehensive program plan of an event to be implemented by the 
+      company.</p>
+    </div>
+    <br class="mobile"><br class="mobile">
+    <div class="col-md-2">
+      <%= image_tag('my-work/mvrc/mvrc-company-32.jpg', :alt => 'Mountain View Retreat Center Company', class: 'img-responsive') %>
+      <p class="date">THE COMPANY</p>
+      <p>Mountain View Retreat Center is based on a retreat center I visited as a 
+      young girl on a trip in Ohio, with a mission and vision statement near and 
+      dear to my heart. The center is designed to host summer camps, large family 
+      reunions, corporate retreats, festivals, and more.</p>
+    </div>
+    <br class="mobile"><br class="mobile">
+    <div class="col-md-2">
+      <%= image_tag('my-work/mvrc/mvrc-event.jpg', :alt => 'Mountain View Retreat Center Event', class: 'img-responsive move') %>
+      <p class="date">THE EVENT</p>
+      <p>The event I designed for this assignment was the Movin' Mountain Beer & Wine Festival. 
+      It brings the community together to both appreciate the retreat center and have a 
+      enjoyable time involving outdoor recreation, music, and local businesses. </p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 about-buttons">
+      <%= link_to "GO BACK", my_work_path, class: 'btn btn-about' %>
+      <div class="button-spacer"></div>
+      <%= link_to "VIEW FULL PROGRAM PLAN", asset_path("mvrc.pdf"), class: 'btn btn-about' %>
+    </div>
+  </div>
+  <%= render 'footer' %>
 </div>

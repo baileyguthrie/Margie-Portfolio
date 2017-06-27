@@ -219,7 +219,6 @@ p {
 }
 
 // My Work stlyes
-
 .date {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -279,4 +278,40 @@ p {
 
 .divider-2 {
     border-top: 3px double #8c8b8b;
+}
+
+// Gallery page stlyes
+.move {
+    @media only screen and (min-width: 992px) {
+        padding-top: 14.5%;
+    }
+}
+
+.buffer {
+    @media only screen and (min-width: 992px) {
+        padding-bottom: 7%;
+    }    
+}
+
+.col-narrow {
+    @media only screen and (min-width: 992px) {
+        width: 12.5%;
+    }
+}
+
+.col-wide {
+    @media only screen and (min-width: 992px) {
+        width: 25%;
+    }
+}
+
+.button-spacer {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+}
+
+.gallery-buttons {
+    display: flex;
+    justify-content: center;
 }

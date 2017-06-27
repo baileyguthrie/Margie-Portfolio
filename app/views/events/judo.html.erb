@@ -1,6 +1,52 @@
 <%= render 'navbar' %>
 
 <div class="container-fluid">
-    
-    <%= render 'footer' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center page-header">2017 National Collegiate Judo Championships</h2>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 col-md-offset-3">
+      <%= image_tag('my-work/judo/judo-flip.jpg', :alt => 'Judo flip', class: 'img-responsive') %>
+      <br class="mobile">
+    </div>
+    <div class="col-md-3">
+      <%= image_tag('my-work/judo/judo-winners.jpg', :alt => 'Judo winners', class: 'img-responsive') %>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-3 col-narrow">
+      <%= image_tag('my-work/judo/judo-booth-32.jpg', :alt => 'Judo me', class: 'img-responsive', id: 'judo-me') %>
+      <br class="mobile">
+    </div>
+    <div class="col-md-2 col-wide">
+      <%= image_tag('my-work/judo/judo-group.jpg', :alt => 'Judo group', class: 'img-responsive', id:'judo-group') %>
+      <br class="mobile">
+    </div>
+    <div class="col-md-2 col-narrow">
+      <%= image_tag('my-work/judo/judo-booth-2-32.jpg', :alt => 'Judo booth view', class: 'img-responsive') %>
+    </div>
+  </div>
+  
+  <br><br>
+  <div class="row desktop">
+    <div class="col-md-6 col-md-offset-3 about-buttons">
+      <%= link_to "GO BACK", my_work_path, class: 'btn btn-about' %>
+      <div class="button-spacer"></div>
+      <%= link_to "VIEW EVENT VERIFICATION FORM", asset_path("judo.pdf"), class: 'btn btn-about' %>
+    </div>
+  </div>
+  <div class="mobile">
+    <div class="gallery-buttons">
+      <%= link_to "VIEW EVENT VERIFICATION FORM", asset_path("kickball.pdf"), class: 'btn btn-about' %>
+    </div>
+    <br>
+    <div class="gallery-buttons">
+      <%= link_to "GO BACK", my_work_path, class: 'btn btn-about' %>
+    </div>
+  </div>
+  <%= render 'footer' %>
 </div>

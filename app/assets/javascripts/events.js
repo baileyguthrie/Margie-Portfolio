@@ -35,4 +35,35 @@ $(document).on('turbolinks:load', function(){
     $('.my-dropdown').hide();
     $('li').removeClass("work");
   }
+  
+  if (window.location.pathname == "/freedomfest") {
+    
+    $('#the-activity').load(function(){
+      var height = $('#the-activity').css('height')
+      var width = $('#the-activity').css('width')
+      $('#the-event').css('height', height)
+      $('#the-event').css('width', width)
+    });
+    
+    $(window).resize(function(){
+      var height = $('#the-activity').css('height')
+      var width = $('#the-activity').css('width')
+      $('#the-event').css('height', height)
+      $('#the-event').css('width', width)
+    });
+  }
+  
+  if (window.location.pathname == "/judo-competition" && $(".col-narrow").css("width") == "12.5%") {
+    
+    $('#judo-me').load(function(){
+      var height = $('#judo-me').css('height')
+      $('#judo-group').css('height', height)
+    });
+    
+    $(window).resize(function(){
+      var height = $('#judo-me').css('height')
+      $('#judo-group').css('height', height)
+    });
+  }
+  
 });

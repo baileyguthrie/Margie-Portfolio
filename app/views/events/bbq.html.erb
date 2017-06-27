@@ -1,6 +1,52 @@
 <%= render 'navbar' %>
 
 <div class="container-fluid">
-    
-    <%= render 'footer' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center page-header">Kappa Delta Chi's 15th Annual Carmela Izaguirre Memorial Scholarship Fundraiser</h2>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 col-md-offset-3">
+      <%= image_tag('my-work/bbq/bbq-gazebo.jpg', :alt => 'BBQ gazebo', class: 'img-responsive') %>
+      <br class="mobile">
+    </div>
+    <div class="col-md-3">
+      <%= image_tag('my-work/bbq/bbq-pavillion-upscale.jpg', :alt => 'BBQ pavillion', class: 'img-responsive') %>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-3">
+      <%= image_tag('my-work/bbq/bbq-danielle.jpg', :alt => 'BBQ Danielle', class: 'img-responsive') %>
+      <br class="mobile">
+    </div>
+    <div class="col-md-2">
+      <%= image_tag('my-work/bbq/bbq-me.jpg', :alt => 'BBQ me', class: 'img-responsive') %>
+      <br class="mobile">
+    </div>
+    <div class="col-md-2">
+      <%= image_tag('my-work/bbq/bbq-myriam.jpg', :alt => 'BBQ Myriam', class: 'img-responsive') %>
+    </div>
+  </div>
+  
+  <br><br>
+  <div class="row desktop">
+    <div class="col-md-6 col-md-offset-3 about-buttons">
+      <%= link_to "GO BACK", my_work_path, class: 'btn btn-about' %>
+      <div class="button-spacer"></div>
+      <%= link_to "VIEW EVENT VERIFICATION FORM", asset_path("bbq.pdf"), class: 'btn btn-about' %>
+    </div>
+  </div>
+  <div class="mobile">
+    <div class="gallery-buttons">
+      <%= link_to "VIEW EVENT VERIFICATION FORM", asset_path("kickball.pdf"), class: 'btn btn-about' %>
+    </div>
+    <br>
+    <div class="gallery-buttons">
+      <%= link_to "GO BACK", my_work_path, class: 'btn btn-about' %>
+    </div>
+  </div>
+  <%= render 'footer' %>
 </div>
