@@ -19,6 +19,12 @@ $(document).on('turbolinks:load', function(){
       }, 1250);
     });
     
+    $('.soup-btn').click(function(){
+      $('html, body').animate({
+        scrollTop: $("#soup-group").offset().top
+      }, 1250);
+    });
+    
     $('.mvrc-btn').click(function(){
       $('html, body').animate({
         scrollTop: $("#mvrc-group").offset().top
